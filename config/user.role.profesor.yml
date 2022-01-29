@@ -1,0 +1,14 @@
+uuid: a729a720-5835-48d5-9f22-887e52ab5e54
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.curso
+  module:
+    - node
+id: profesor
+label: Profesor
+weight: 4
+is_admin: null
+permissions:
+  - 'create curso content'

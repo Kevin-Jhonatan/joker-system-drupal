@@ -1,0 +1,51 @@
+uuid: c577e601-f27d-46de-8653-41cea21a9773
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.backend.field_descripcion
+    - field.field.node.backend.field_profesor
+    - field.field.node.backend.field_video
+    - node.type.backend
+  module:
+    - text
+    - user
+    - video_embed_field
+id: node.backend.default
+targetEntityType: node
+bundle: backend
+mode: default
+content:
+  field_descripcion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_profesor:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_video:
+    type: video_embed_field_video
+    label: above
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

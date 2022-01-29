@@ -1,0 +1,20 @@
+uuid: fbc1bcc7-7cfe-4fa2-8b3d-e8e4e4a5355b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_especialidad
+field_name: field_especialidad
+entity_type: node
+type: text
+settings:
+  max_length: 50
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

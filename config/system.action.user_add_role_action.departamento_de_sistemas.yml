@@ -1,0 +1,14 @@
+uuid: bb33f209-9ecf-4f5b-9388-0e9ba5ccad59
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.departamento_de_sistemas
+  module:
+    - user
+id: user_add_role_action.departamento_de_sistemas
+label: 'Añade el rol Departamento de Sistemas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: departamento_de_sistemas

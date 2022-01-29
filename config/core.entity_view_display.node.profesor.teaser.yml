@@ -1,0 +1,31 @@
+uuid: 51fa7ac5-bdde-4c4e-b21e-318fb85da0e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.profesor.field_apellido
+    - field.field.node.profesor.field_c_i_
+    - field.field.node.profesor.field_cursos
+    - field.field.node.profesor.field_especialidad
+    - field.field.node.profesor.field_perfil
+    - node.type.profesor
+  module:
+    - user
+id: node.profesor.teaser
+targetEntityType: node
+bundle: profesor
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_apellido: true
+  field_c_i_: true
+  field_cursos: true
+  field_especialidad: true
+  field_perfil: true
+  langcode: true

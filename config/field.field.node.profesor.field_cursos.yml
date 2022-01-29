@@ -1,0 +1,33 @@
+uuid: 87d73a4f-3ecd-4596-a04c-aa0e52598239
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cursos
+    - node.type.backend
+    - node.type.curso
+    - node.type.frontend
+    - node.type.profesor
+id: node.profesor.field_cursos
+field_name: field_cursos
+entity_type: node
+bundle: profesor
+label: Cursos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      backend: backend
+      curso: curso
+      frontend: frontend
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: backend
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 9fd6934c-e892-4603-9e89-22b31fadd046
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.frontend
+id: node.frontend.status
+field_name: status
+entity_type: node
+bundle: frontend
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

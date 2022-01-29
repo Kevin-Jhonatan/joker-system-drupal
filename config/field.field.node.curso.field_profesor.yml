@@ -1,0 +1,29 @@
+uuid: 6da35bc2-034d-4b83-a33e-c40dc5af444d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profesor
+    - node.type.curso
+    - node.type.profesor
+id: node.curso.field_profesor
+field_name: field_profesor
+entity_type: node
+bundle: curso
+label: Profesor
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      profesor: profesor
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

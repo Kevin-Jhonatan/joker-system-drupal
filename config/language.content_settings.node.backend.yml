@@ -1,0 +1,11 @@
+uuid: 6916906c-243d-43a3-9389-79365d494a33
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.backend
+id: node.backend
+target_entity_type_id: node
+target_bundle: backend
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 73bdcd28-23c9-4655-9a9f-e45f34856717
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.frontend
+id: node.frontend
+target_entity_type_id: node
+target_bundle: frontend
+default_langcode: site_default
+language_alterable: false

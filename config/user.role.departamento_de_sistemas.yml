@@ -1,0 +1,16 @@
+uuid: 69309753-950d-4798-81fc-5702c4d450ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.profesor
+  module:
+    - node
+id: departamento_de_sistemas
+label: 'Departamento de Sistemas'
+weight: 5
+is_admin: null
+permissions:
+  - 'create profesor content'
+  - 'delete any profesor content'
+  - 'delete own profesor content'

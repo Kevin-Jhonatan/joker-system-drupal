@@ -1,0 +1,14 @@
+uuid: 0d750494-92b5-4756-baab-6cebbd5f6f92
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.departamento_de_sistemas
+  module:
+    - user
+id: user_remove_role_action.departamento_de_sistemas
+label: 'Elimina el rol Departamento de Sistemas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: departamento_de_sistemas

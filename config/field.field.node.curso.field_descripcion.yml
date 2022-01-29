@@ -1,0 +1,23 @@
+uuid: 97c8b824-c256-4647-9f4e-d39011ed06ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion
+    - node.type.curso
+  module:
+    - text
+id: node.curso.field_descripcion
+field_name: field_descripcion
+entity_type: node
+bundle: curso
+label: Descripción
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

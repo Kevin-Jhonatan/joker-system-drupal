@@ -1,0 +1,11 @@
+uuid: 4e047802-69f9-4632-be4a-b0648f782fd1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.profesor
+id: node.profesor
+target_entity_type_id: node
+target_bundle: profesor
+default_langcode: site_default
+language_alterable: false

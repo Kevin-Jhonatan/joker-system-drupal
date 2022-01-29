@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: es
+uuid: cea155b8-a281-4210-aaf9-53d942ec133d
+name: 'Joker System'
+mail: keevj1999@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/11
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es

@@ -1,0 +1,29 @@
+uuid: de4d77ff-4c1d-4783-b92c-f30bd9440996
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.curso.field_descripcion
+    - field.field.node.curso.field_especialidad
+    - field.field.node.curso.field_profesor
+    - field.field.node.curso.field_video
+    - node.type.curso
+  module:
+    - user
+id: node.curso.teaser
+targetEntityType: node
+bundle: curso
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_descripcion: true
+  field_especialidad: true
+  field_profesor: true
+  field_video: true
+  langcode: true

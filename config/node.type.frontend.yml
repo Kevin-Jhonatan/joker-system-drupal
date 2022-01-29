@@ -1,0 +1,17 @@
+uuid: 4309bf02-1b2d-48ce-b294-28f23141d98c
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Frontend
+type: frontend
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
