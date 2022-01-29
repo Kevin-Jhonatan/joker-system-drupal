@@ -625,7 +625,7 @@ display:
       menu:
         type: normal
         title: Profesores
-        weight: -49
+        weight: -47
         menu_name: main
         parent: ''
     cache_metadata:

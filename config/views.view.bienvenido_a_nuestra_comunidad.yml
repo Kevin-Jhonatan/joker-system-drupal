@@ -1,21 +1,19 @@
-uuid: 530d0564-e2fe-40bd-901f-c937def68275
+uuid: 371db89c-dd0e-47b7-9147-6a8b65e112b4
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.field_descripcion
-    - field.storage.node.field_especialidad
-    - field.storage.node.field_profesor
-    - field.storage.node.field_video
-    - node.type.curso
+    - field.storage.node.field_imagen
+    - node.type.blog
     - system.menu.main
   module:
+    - image
     - node
     - text
     - user
-    - video_embed_field
-id: cursos
-label: Cursos
+id: bienvenido_a_nuestra_comunidad
+label: 'Bienvenido A Nuestra Comunidad'
 module: views
 description: ''
 tag: ''
@@ -28,7 +26,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Cursos Nuevos De Desarrollo Web'
+      title: 'Bienvenido A Nuestra Comunidad'
       fields:
         title:
           id: title
@@ -77,10 +75,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_especialidad:
-          id: field_especialidad
-          table: node__field_especialidad
-          field: field_especialidad
+        field_imagen:
+          id: field_imagen
+          table: node__field_imagen
+          field: field_imagen
           relationship: none
           group_type: group
           admin_label: ''
@@ -119,134 +117,6 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_video:
-          id: field_video
-          table: node__field_video
-          field: field_video
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: video_embed_field_colorbox
-          settings:
-            autoplay: true
-            responsive: true
-            width: 854
-            height: 480
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_profesor:
-          id: field_profesor
-          table: node__field_profesor
-          field: field_profesor
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: Profesor
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -255,10 +125,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_label
+          type: image
           settings:
-            link: false
-          group_column: target_id
+            image_link: ''
+            image_style: ''
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -406,32 +277,33 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            curso: curso
-          group: 1
+            blog: blog
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_especialidad_value:
-          id: field_especialidad_value
-          table: node__field_especialidad
-          field: field_especialidad_value
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: string
           operator: word
           value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: field_especialidad_value_op
-            label: 'Buscar por especialidad:'
+            operator_id: title_op
+            label: 'Buscar:'
             description: ''
             use_operator: false
-            operator: field_especialidad_value_op
+            operator: title_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_especialidad_value
+            identifier: title
             required: false
             remember: false
             multiple: false
@@ -455,10 +327,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
       style:
         type: grid
         options:
@@ -500,30 +368,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_descripcion'
-        - 'config:field.storage.node.field_especialidad'
-        - 'config:field.storage.node.field_profesor'
-        - 'config:field.storage.node.field_video'
-  block_1:
-    id: block_1
-    display_title: Bloque
-    display_plugin: block
-    position: 2
-    display_options:
-      display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - url.query_args
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_descripcion'
-        - 'config:field.storage.node.field_especialidad'
-        - 'config:field.storage.node.field_profesor'
-        - 'config:field.storage.node.field_video'
+        - 'config:field.storage.node.field_imagen'
   page_1:
     id: page_1
     display_title: Page
@@ -531,13 +376,16 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: cursos
+      path: joker-system/blog
       menu:
         type: normal
-        title: Cursos
-        weight: -49
+        title: Blog
+        description: ''
+        weight: 0
+        expanded: false
         menu_name: main
         parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -549,6 +397,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_descripcion'
-        - 'config:field.storage.node.field_especialidad'
-        - 'config:field.storage.node.field_profesor'
-        - 'config:field.storage.node.field_video'
+        - 'config:field.storage.node.field_imagen'

@@ -33,7 +33,7 @@ content:
     region: content
   field_video:
     type: video_embed_field_video
-    label: above
+    label: visually_hidden
     settings:
       autoplay: true
       responsive: true
