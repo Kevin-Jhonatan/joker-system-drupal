@@ -5,3 +5,5 @@
 # la idea es que funcione con suscripciones pero por el momento esta como
 # libre pero esta restringido por roles para la seccion de especialidades
 # y tiene un espacio de blog para la comunidad del sitio o del mundo de programación.
+# esta alojado en un servidor Linux-ubuntu 
+# http://kevin.cochasoft.com/
